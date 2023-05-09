@@ -20,7 +20,7 @@ const Home = () => {
             className="duration-700 w-96 hover:drop-shadow-carrot"
           />
         </div>
-        <h1 className="text-4xl duration-1000 drop-shadow-purple hover:drop-shadow-carrot font-extraBold sm:text-7xl whitespace-nowrap">
+        <h1 className="text-6xl duration-1000 drop-shadow-purple hover:drop-shadow-carrot font-extraBold sm:text-7xl whitespace-wrap sm:whitespace-nowrap text-center">
           {pageTitle}
         </h1>
         <div className="text-center animate-fade-in">
