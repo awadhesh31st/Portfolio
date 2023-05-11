@@ -43,4 +43,7 @@
   :root {
     @apply text-base font-light bg-coal text-biege;
   }
+  .btn-yellow {
+    @apply px-8 py-1 uppercase border-2 rounded-full cursor-pointer border-yellow hover:bg-coal font-extraLight hover:text-yellow bg-yellow text-charcoal;
+  }
 }

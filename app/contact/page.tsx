@@ -1,83 +1,52 @@
 import React from 'react';
 import Image from 'next/image';
-import { ContectProps } from '../../types/contect';
-import { ContectMock } from '@mocks/contect-mock';
+import { ContactProps } from '../../types/contact';
 
-import ContactForm from '../../public/assets/icons/real-world.svg';
-import MutantFish from '../../public/assets/icons/mutant-fish.svg';
-import Resume from '../../public/assets/icons/resume.svg';
+import LogoLoginNav from '@components/Navigation/LogoLoginNav';
+import Footer from '@components/Footer';
+import { ContactMock } from '@mocks/contact-mock';
 
-const Conact = () => {
-  const {
-    pageTitle,
-    pageDescription,
-    placeHolderText,
-    buttonLabel,
-    linkedin,
-  }: ContectProps = ContectMock;
+import reactNews from '../../public/assets/icons/react-news.svg';
+import reactQuery from '../../public/assets/icons/react-query-logo.svg';
+
+const Contact = () => {
+  const { title, description, topicTitle }: ContactProps = ContactMock;
   return (
-    <div className="flex items-center justify-center w-screen flex-col h-auto md:h-screen py-6 md:py-0">
-      <div className="flex flex-col justify-center items-center text-center gap-8 md:w-[45rem] w-50">
-        <h1 className="text-6xl duration-1000 drop-shadow-purple hover:drop-shadow-carrot font-extraBold sm:text-7xl whitespace-wrap sm:whitespace-nowrap text-center">
-          {pageTitle}
-        </h1>
-        <h2 className="text-grayLight text-md sm:text-xl font-light mx-6 md:mx-12">
-          {pageDescription}
-        </h2>
-        <figure className="mt-14 mb-2">
-          <a href={linkedin} target="_blank">
-            <Image
-              src={Resume}
-              alt="mutant-fish"
-              className="duration-700 lg:w-40 w-28 h-auto hover:drop-shadow-pink cursor-pointer"
-            />
-          </a>
-        </figure>
-      </div>
-      <div className="flex flex-col items-center justify-center mx-8 gap-8">
-        <div className="mt-20 mx-2 sm:mx-8 py-8 lg:py-20 bg-charcoal rounded-[20px] md:rounded-[50px] relative text-beige">
-          <figure className="absolute lg:top-[-4rem] top-[-3rem] right-0 pt-5">
-            <Image
-              src={ContactForm}
-              alt="mutant-fish"
-              className="duration-700 lg:w-40 w-20 h-auto hover:drop-shadow-red"
-            />
-          </figure>
-          <div className="container mx-auto px-8 grid grid-cols-2 lg:grid-cols-12 gap-20">
-            <div className="col-span-2 lg:col-span-12">
-              <form className="p-8 bg-coal bg-opacity-50 rounded-2xl w-full">
-                <div className="flex gap-2 items-start flex-wrap md:flex-nowrap">
-                  <div className="w-full">
-                    <div className="grid gap-2 flex-1 shadow-md ">
-                      <input
-                        id="bytes_email"
-                        placeholder={placeHolderText}
-                        name="bytes_email"
-                        className="h-10 w-full bg-coal bg-opacity-10 border border-grayDark border-opacity-60 text-beige rounded-md py-2 pl-4 placeholder:opacity-50 placeholder:text-beige focus:border-beige outline-none focus:ring-0  undefined"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    type="submit"
-                    className="bg-yellow text-charcoal rounded py-2 px-4 font-bold w-full md:w-[200px] whitespace-nowrap"
-                  >
-                    <span className="flex-grow">{buttonLabel}</span>
-                  </button>
-                </div>
-              </form>
+    <div className="pt-14">
+      <div className="flex flex-col items-center h-auto sm:pt-44 sm:pb-28 ">
+        <div className="flex flex-col justify-center items-center text-center gap-8 md:w-[45rem] w-50">
+          <h1 className="text-6xl text-center duration-1000 drop-shadow-purple hover:drop-shadow-carrot font-extraBold sm:text-7xl whitespace-wrap sm:whitespace-nowrap">
+            {title}
+          </h1>
+          <h2 className="mx-6 font-light text-grayLight text-md sm:text-xl md:mx-12">
+            {description}
+          </h2>
+        </div>
+        <section className="mx-auto max-w-[800px] text-beige pt-10 pb-20 px-2">
+          <h4 className="mx-6 text-center mb-12 font-regular max-w-[500px] text-grayDark text-md sm:text-xl md:mx-12">
+            {topicTitle}
+          </h4>
+          <div className="flex flex-col items-center justify-center gap-11 sm:gap-8 sm:flex-row">
+            <div className="w-40 h-auto">
+              <Image
+                className="inline-block"
+                src={reactNews}
+                alt="1m YouTube Views"
+              />
+            </div>
+            <div className="w-40 h-auto">
+              <Image
+                className="inline-block"
+                src={reactQuery}
+                alt="1m YouTube Views"
+              />
             </div>
           </div>
-          <figure className="absolute md:top-[13rem] top-[13rem] md:left-96 left-32">
-            <Image
-              src={MutantFish}
-              alt="mutant-fish"
-              className="duration-700 lg:w-40 w-20 h-auto hover:drop-shadow-blue"
-            />
-          </figure>
-        </div>
+        </section>
       </div>
+      <Footer />
     </div>
   );
 };
 
-export default Conact;
+export default Contact;
