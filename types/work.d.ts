@@ -1,6 +1,6 @@
 import { NavigationsProps } from './navigation';
 
-export type ProjectProps = {
+export type WorkProps = {
   navigationsProps: NavigationsProps;
   pageTitle: string;
   pageDescription: string;

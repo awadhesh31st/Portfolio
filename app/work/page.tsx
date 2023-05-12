@@ -1,14 +1,14 @@
 import React from 'react';
 import CardWithContent from '@components/Card/CardWithContent';
 
-import { ProjectProps } from '../../types/project';
+import { WorkProps } from '../../types/work';
 
-import { ProjectMock } from '@mocks/project-mock';
+import { WrokMock } from '@mocks/work-mock';
 import { CardMock } from '@mocks/card-mock';
 import Footer from '@components/Footer';
 
 const Projects = () => {
-  const { pageTitle, pageDescription }: ProjectProps = ProjectMock;
+  const { pageTitle, pageDescription }: WorkProps = WrokMock;
 
   return (
     <div className="pb-16">
