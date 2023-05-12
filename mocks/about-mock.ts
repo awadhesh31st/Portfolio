@@ -1,7 +1,7 @@
-import { AboutProps } from '../types/about';
 import { NavigationMock } from './navigation-mock';
+import { LayoutProps } from '../types/common';
 
-export const AboutMock: AboutProps = {
+export const AboutMock: LayoutProps = {
   navigationsProps: NavigationMock,
-  pageTitle: `About`,
+  title: `About`,
 };

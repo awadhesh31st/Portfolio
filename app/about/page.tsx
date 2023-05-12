@@ -1,12 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Footer from '@components/Footer';
-
 import { AboutMock } from '@mocks/about-mock';
-import { AboutProps } from '../../types/about';
-
-import checkAll from '../../public/assets/icons/ready-to-go.svg';
-
+import { techStacks } from '@utils/techStack';
 import hook from '../../public/assets/icons/hook.svg';
 import javascript from '../../public/assets/icons/javascript-logo.svg';
 import modernJavascript from '../../public/assets/icons/modern-javascript-logo.svg';
@@ -14,7 +10,8 @@ import reactHook from '../../public/assets/icons/react-hooks-logo.svg';
 import react from '../../public/assets/icons/react-logo.svg';
 import reactQuery from '../../public/assets/icons/react-query-logo.svg';
 import typescriptReact from '../../public/assets/icons/react-with-typescript-logo.svg';
-import { techStacks } from '@utils/techStack';
+import checkAll from '../../public/assets/icons/ready-to-go.svg';
+import { LayoutProps } from '../../types/common';
 
 export const metadata = {
   title: 'Awadhesh | About',
@@ -31,7 +28,7 @@ const About = () => {
     reactQuery,
     typescriptReact,
   ];
-  const { pageTitle }: AboutProps = AboutMock;
+  const { title }: LayoutProps = AboutMock;
 
   return (
     <div className="pb-16">
@@ -40,13 +37,13 @@ const About = () => {
           <div className="flex items-center justify-center w-full">
             <div className="flex flex-col items-center justify-center max-w-sm mx-5 text-center sm:max-w-2xl">
               <h1 className="text-5xl text-center duration-1000 sm:text-6xl drop-shadow-carrot hover:drop-shadow-green font-extraBold">
-                {pageTitle}
+                {title}
               </h1>
               <div className="flex flex-col items-center justify-center gap-20 sm:gap-32">
                 <div className="flex flex-col items-center justify-center gap-5 text-sm font-thin sm:font-extraLight mt-14 text-biege sm:text-lg">
                   <p>
                     I am an experienced
-                    <span className="text-pink font-extraLight sm:font-regular px-[3.5px]">
+                    <span className="text-pink font-light sm:font-regular px-[3.5px]">
                       front-end developer
                     </span>
                     with a passion for Javascript and a strong expertise in
@@ -126,6 +123,7 @@ const About = () => {
                       <span
                         className="px-6 py-1 m-1 text-lg font-medium border-4 rounded-full bg-yellow text-coal drop-shadow-coal"
                         key={key}
+                        id={tech}
                       >
                         {tech}
                       </span>

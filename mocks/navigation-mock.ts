@@ -1,9 +1,7 @@
-import { NavigationsProps } from '../types/navigation';
+import { NavigationProps } from '../types/common';
 
-export const NavigationMock: NavigationsProps = {
-  navigations: [
-    { title: 'work', path: '/work' },
-    { title: 'about', path: '/about' },
-    { title: 'contact', path: '/contact' },
-  ],
-};
+export const NavigationMock: NavigationProps[] = [
+  { title: 'work', path: '/work' },
+  { title: 'about', path: '/about' },
+  { title: 'contact', path: '/contact' },
+];

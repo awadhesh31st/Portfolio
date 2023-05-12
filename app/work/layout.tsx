@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactJSXProps } from '../../types/reactJSX';
+import { ReactJSXProps } from '../../types/common';
 
 export const metadata = {
   title: 'Project',
