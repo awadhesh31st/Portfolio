@@ -3,7 +3,7 @@ import { FooterProps } from '../types/footer';
 export const FooterMock: FooterProps = {
   stuff: {
     title: 'Stuff',
-    list: ['Project', 'Contact', 'About'],
+    list: ['Work', 'Contact', 'About'],
   },
   moreStuff: {
     title: 'More',

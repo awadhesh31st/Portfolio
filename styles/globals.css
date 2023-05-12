@@ -46,4 +46,10 @@
   .btn-yellow {
     @apply px-8 py-1 uppercase border-2 rounded-full cursor-pointer border-yellow hover:bg-coal font-extraLight hover:text-yellow bg-yellow text-charcoal;
   }
+  .bsddccsdc {
+    -webkit-text-stroke: 1px #0f0d0e;
+  }
+  .fsffeff {
+    -webkit-text-stroke: 1px #ed203d;
+  }
 }

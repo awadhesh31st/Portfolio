@@ -53,6 +53,7 @@ module.exports = {
         red: '#ed203d 5px 5px 0px',
         green: '#0ba95b 5px 5px 0px',
         biege: '#f9f4da 5px 5px 0px',
+        coal: '#0f0d0e 5px 5px 0px',
       },
     },
   },
