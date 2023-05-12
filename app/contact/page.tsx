@@ -1,16 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import { ContactProps } from '../../types/contact';
-
-import LogoLoginNav from '@components/Navigation/LogoLoginNav';
 import Footer from '@components/Footer';
 import { ContactMock } from '@mocks/contact-mock';
-
 import reactNews from '../../public/assets/icons/react-news.svg';
 import reactQuery from '../../public/assets/icons/react-query-logo.svg';
+import { LayoutProps } from '../../types/common';
 
 const Contact = () => {
-  const { title, description, topicTitle }: ContactProps = ContactMock;
+  const { title, description, pageSection }: LayoutProps = ContactMock;
   return (
     <div className="pt-14">
       <div className="flex flex-col items-center h-auto sm:pt-44 sm:pb-28 ">
@@ -24,7 +21,7 @@ const Contact = () => {
         </div>
         <section className="mx-auto max-w-[800px] text-beige pt-10 pb-20 px-2">
           <h4 className="mx-6 text-center mb-12 font-regular max-w-[500px] text-grayDark text-md sm:text-xl md:mx-12">
-            {topicTitle}
+            {pageSection?.title}
           </h4>
           <div className="flex flex-col items-center justify-center gap-11 sm:gap-8 sm:flex-row">
             <div className="w-40 h-auto">

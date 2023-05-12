@@ -1,9 +1,8 @@
 'use client';
 
+import CardLayout from './CardLayout';
 import React from 'react';
 import Link from 'next/link';
-import CardLayout from './CardLayout';
-
 import { Eye } from 'lucide-react';
 import { CardProps } from '../../types/card';
 
@@ -30,7 +29,7 @@ const CardWithContent: React.FC<CardProps> = ({
             <h2 className="text-2xl duration-1000 font-semiBold lg:text-3xl text-biege group-hover:text-yellow">
               {title}
             </h2>
-            <p className="mt-4 duration-700 text-sm font-light text-grayDark hover:text-biege">
+            <p className="mt-4 text-sm font-light duration-700 text-grayDark hover:text-biege">
               {description}
             </p>
           </div>

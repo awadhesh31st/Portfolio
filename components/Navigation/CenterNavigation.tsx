@@ -1,20 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
-import { NavigationsProps } from '../../types/navigation';
+import { NavigationProps } from '../../types/common';
 
-const CenterNavigation: React.FC<NavigationsProps> = ({ navigations }) => {
+const CenterNavigation: React.FC<NavigationProps> = ({ title, path }) => {
   return (
     <nav className="my-8 sm:my-0 animate-fade-in">
-      <ul className="sm:flex justify-center gap-4 navigations-center sm:visible hidden">
-        {navigations.map((navigation) => (
-          <Link
-            key={navigation.title}
-            href={navigation.path}
-            className="text-base font-light duration-500 text-grayDark hover:text-biege"
-          >
-            {navigation.title}
-          </Link>
-        ))}
+      <ul className="justify-center hidden gap-4 sm:flex navigations-center sm:visible">
+        <Link
+          key={path || ''}
+          href={path || ''}
+          className="text-base font-light duration-500 text-grayDark hover:text-biege"
+        >
+          {title || ''}
+        </Link>
       </ul>
     </nav>
   );

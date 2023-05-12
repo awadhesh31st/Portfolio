@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-
 import JavascriptLogo from '../../public/assets/icons/javascript-logo.svg';
 import ReactHookLogo from '../../public/assets/icons/react-hooks-logo.svg';
 import ReactLogo from '../../public/assets/icons/react-logo.svg';
