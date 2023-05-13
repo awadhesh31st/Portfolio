@@ -4,32 +4,36 @@ export interface ReactJSXProps {
   children?: React.ReactNode;
 }
 
-export interface basicPageProps {
+export interface StyleHtmlProps {
+  content?: string;
+}
+
+export interface basicProps {
   key?: string | number | boolean;
   title?: string;
   description?: string;
 }
 
-export interface basicInputProps extends basicPageProps {
+export interface basicInputProps extends basicProps {
   inputPlaceholder?: string;
   buttonLabel?: string;
 }
 
-export interface NavigationProps extends basicPageProps {
+export interface NavigationProps extends basicProps {
   path?: string;
 }
 
-export interface FooterMenuProps extends basicPageProps {
+export interface FooterMenuProps extends basicProps {
   navItem?: string[];
 }
 
-export interface FooterProps extends basicPageProps {
+export interface FooterProps extends basicProps {
   menu?: FooterMenuProps;
   moreMenu?: FooterMenuProps;
   form?: basicInputProps;
 }
 
-export interface LayoutProps extends basicPageProps {
+export interface LayoutProps extends basicProps {
   navigationsProps?: NavigationProps[];
-  pageSection?: basicPageProps;
+  pageSection?: basicProps;
 }

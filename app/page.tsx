@@ -9,7 +9,7 @@ const Home = () => {
   const { navigationsProps, title, description }: LayoutProps = HomeMock;
 
   return (
-    <div className="flex flex-col-reverse items-center justify-center w-screen h-auto sm:flex-col sm:h-screen">
+    <div className="flex flex-col items-center justify-center w-full h-auto mt-8 sm:flex-col sm:h-screen sm:mt-0">
       <div className="flex flex-col items-center justify-center mx-8 gap-14">
         <div className="flex items-center justify-center my-6">
           <Image
@@ -19,7 +19,7 @@ const Home = () => {
             className="duration-700 w-96 hover:drop-shadow-carrot"
           />
         </div>
-        <h1 className="text-6xl text-center duration-1000 drop-shadow-purple hover:drop-shadow-carrot font-extraBold sm:text-7xl whitespace-wrap sm:whitespace-nowrap">
+        <h1 className="text-6xl duration-1000 drop-shadow-purple hover:drop-shadow-carrot font-extraBold sm:text-7xl whitespace-wrap sm:whitespace-nowrap text-start sm:text-center">
           {title}
         </h1>
         <div className="text-center animate-fade-in">
