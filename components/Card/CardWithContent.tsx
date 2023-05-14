@@ -7,11 +7,11 @@ import { Eye } from 'lucide-react';
 import { CardProps } from '../../types/card';
 
 const CardWithContent: React.FC<CardProps> = ({
-  slug,
-  date,
-  like,
-  title,
-  description,
+  slug = '',
+  date = '',
+  like = '',
+  title = '',
+  description = '',
 }) => {
   return (
     <CardLayout>

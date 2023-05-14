@@ -31,7 +31,7 @@ const Home = () => {
       </div>
       <div className="flex flex-row items-center justify-center gap-4">
         {navigationsProps?.map((navigation: NavigationProps, key: number) => {
-          return <CenterNavigation {...navigation} key={key} />;
+          return <CenterNavigation {...(navigation || {})} key={key} />;
         })}
       </div>
     </div>
