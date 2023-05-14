@@ -9,7 +9,7 @@ import brandLogo from '../../public/assets/images/logo-transparent.png';
 import { FooterProps } from '../../types/common';
 
 const Footer = () => {
-  const { menu, moreMenu, form }: FooterProps = FooterMock;
+  const { menu, moreMenu, form }: FooterProps = FooterMock || {};
   return (
     <footer className="mt-20 mx-2 sm:mx-8 py-8 lg:py-20  bg-charcoal rounded-[20px] md:rounded-[50px] relative overflow-hidden text-beige">
       <div className="container px-8 mx-auto mb-12">

@@ -12,6 +12,7 @@ export interface basicProps {
   key?: string | number | boolean;
   title?: string;
   description?: string;
+  date?: string;
 }
 
 export interface basicInputProps extends basicProps {

@@ -1,12 +1,19 @@
 import React from 'react';
-import CardWithContent from '@components/Card/CardWithContent';
+import GitHubRepo from '@components/Card/GitHubRepo';
 import Footer from '@components/Footer';
-import { CardMock } from '@mocks/card-mock';
 import { WrokMock } from '@mocks/work-mock';
+import { GitRepoProps } from '../../types/card';
 import { LayoutProps } from '../../types/common';
 
-const Projects = () => {
+async function fetchGitRepo() {
+  const res31 = await fetch('https://api.github.com/users/awadhesh31st/repos');
+  const data31 = await res31.json();
+  return data31;
+}
+
+const Projects = async () => {
   const { title, description }: LayoutProps = WrokMock;
+  const data = (await fetchGitRepo()) || [];
 
   return (
     <div className="pb-16">
@@ -22,8 +29,8 @@ const Projects = () => {
         </div>
         <div className="w-full h-px bg-grayLight bg-opacity-20" />
         <div className="grid grid-cols-1 gap-5 mx-auto lg:mx-0 sm:grid-cols-2 lg:grid-cols-3">
-          {CardMock?.map((cardData, key) => {
-            return <CardWithContent {...cardData} key={key} />;
+          {data?.map((cardData: GitRepoProps, key: number) => {
+            return <GitHubRepo {...cardData} key={key} />;
           })}
         </div>
       </div>
