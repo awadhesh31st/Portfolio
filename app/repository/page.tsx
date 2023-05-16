@@ -1,7 +1,7 @@
 import React from 'react';
 import GitHubRepo from '@components/Card/GitHubRepo';
 import Footer from '@components/Footer';
-import { WrokMock } from '@mocks/work-mock';
+import { WrokMock } from '@mocks/repository-mock';
 import { GitRepoProps } from '../../types/card';
 import { LayoutProps } from '../../types/common';
 
@@ -11,7 +11,7 @@ async function fetchGitRepo() {
   return data31;
 }
 
-const Projects = async () => {
+const GitRepositoryPage = async () => {
   const { title, description }: LayoutProps = WrokMock;
   const data = (await fetchGitRepo()) || [];
 
@@ -39,4 +39,4 @@ const Projects = async () => {
   );
 };
 
-export default Projects;
+export default GitRepositoryPage;
