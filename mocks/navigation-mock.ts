@@ -1,6 +1,6 @@
 import { NavigationProps } from '../types/common';
 
 export const NavigationMock: NavigationProps[] = [
-  { title: 'work', path: '/work' },
+  { title: 'repository', path: '/repository' },
   { title: 'about', path: '/about' },
 ];

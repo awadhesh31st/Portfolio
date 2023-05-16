@@ -3,7 +3,7 @@ import { FooterProps } from '../types/common';
 export const FooterMock: FooterProps = {
   menu: {
     title: 'Stuff',
-    navItem: ['Work', 'About'],
+    navItem: ['Repository', 'About'],
   },
   moreMenu: {
     title: 'More',

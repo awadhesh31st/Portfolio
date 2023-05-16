@@ -17,5 +17,6 @@ export type GitRepoProps = {
   created_at?: string;
   updated_at?: string;
   homepage?: string;
+  html_url?: string;
   private?: boolean;
 };
