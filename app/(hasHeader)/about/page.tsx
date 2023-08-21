@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Footer from '@components/Footer';
 import { AboutMock } from '@mocks/about-mock';
 import { techStacks } from '@utils/techStack';
+import { LayoutProps } from '../../../types/common';
 import hook from '../../public/assets/icons/hook.svg';
 import javascript from '../../public/assets/icons/javascript-logo.svg';
 import modernJavascript from '../../public/assets/icons/modern-javascript-logo.svg';
@@ -13,7 +14,6 @@ import react from '../../public/assets/icons/react-logo.svg';
 import reactQuery from '../../public/assets/icons/react-query-logo.svg';
 import typescriptReact from '../../public/assets/icons/react-with-typescript-logo.svg';
 import checkAll from '../../public/assets/icons/ready-to-go.svg';
-import { LayoutProps } from '../../types/common';
 
 const About = () => {
   const teactLogo = [
@@ -39,63 +39,53 @@ const About = () => {
               <div className="flex flex-col items-center justify-center gap-20 sm:gap-32">
                 <div className="flex flex-col items-center justify-center gap-5 text-sm font-thin sm:font-extraLight mt-14 text-biege sm:text-lg">
                   <p>
-                    {' '}
-                    I am an experienced{' '}
+                    I am an experienced
                     <span className="text-pink font-light sm:font-regular px-[3.5px]">
-                      {' '}
-                      front-end developer{' '}
-                    </span>{' '}
+                      front-end developer
+                    </span>
                     with a passion for Javascript and a strong expertise in
                     ReactJS. I have a great depth of knowledge in developing
                     performant, decoupled, testable and maintainable code that
                     is easy to work with. I enjoy working collaboratively with
                     my teammates, sharing my knowledge and skills, and learning
-                    new technologies in the process.{' '}
-                  </p>{' '}
+                    new technologies in the process.
+                  </p>
                   <p>
-                    {' '}
-                    As a developer, I take a keen{' '}
+                    As a developer, I take a keen
                     <span className="text-yellow font-extraLight sm:font-regular px-[3.5px]">
-                      {' '}
-                      interest in open-source{' '}
-                    </span>{' '}
+                      interest in open-source
+                    </span>
                     and leverage existing libraries whenever it makes sense. I
-                    have the ability to{' '}
+                    have the ability to
                     <span className="text-pink font-extraLight sm:font-regular px-[3.5px]">
-                      {' '}
-                      write components in vanilla JavaScript{' '}
-                    </span>{' '}
+                      write components in vanilla JavaScript
+                    </span>
                     but can also work with existing libraries when needed. I am
-                    highly familiar with{' '}
+                    highly familiar with
                     <span className="text-yellow font-extraLight sm:font-regular px-[3.5px]">
-                      {' '}
-                      React and Redux and write{' '}
-                    </span>{' '}
-                    all new code with ES6 features.{' '}
-                  </p>{' '}
+                      React and Redux and write
+                    </span>
+                    all new code with ES6 features.
+                  </p>
                   <p>
-                    {' '}
-                    I have a thirst for knowledge and always{' '}
+                    I have a thirst for knowledge and always
                     <span className="text-yellow font-extraLight sm:font-regular px-[3.5px]">
-                      {' '}
                       seek to learn new programming languages, frameworks, and
-                      paradigms{' '}
-                    </span>{' '}
+                      paradigms
+                    </span>
                     . My expertise in front-end development combined with my
                     curiosity and ability to learn quickly makes me an ideal
-                    candidate for any challenging project.{' '}
-                  </p>{' '}
+                    candidate for any challenging project.
+                  </p>
                   <p>
-                    {' '}
-                    My passion for{' '}
+                    My passion for
                     <span className="text-pink font-extraLight sm:font-regular px-[3.5px]">
-                      {' '}
-                      creating intuitive and user-friendly web interfaces{' '}
-                    </span>{' '}
+                      creating intuitive and user-friendly web interfaces
+                    </span>
                     is what drives me to constantly improve and challenge
                     myself. I believe in the power of design and user experience
                     to drive success and satisfaction for both businesses and
-                    their customers.{' '}
+                    their customers.
                   </p>
                 </div>
                 <div className="flex flex-col items-center justify-center">
