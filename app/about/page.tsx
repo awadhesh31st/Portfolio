@@ -30,7 +30,7 @@ const About = () => {
   return (
     <div className="pb-16">
       <div className="container relative mx-auto">
-        <div className="flex justify-between mt-20 sm:mt-32">
+        <div className="flex justify-between mt-8 sm:mt-12">
           <div className="flex items-center justify-center w-full">
             <div className="flex flex-col items-center justify-center max-w-sm mx-5 text-center sm:max-w-2xl">
               <h1 className="text-5xl text-center duration-1000 sm:text-6xl drop-shadow-carrot hover:drop-shadow-green font-extraBold">
