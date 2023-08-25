@@ -4,6 +4,10 @@ export interface ReactJSXProps {
   children?: React.ReactNode;
 }
 
+export interface JsxWithClass extends ReactJSXProps {
+  className?: string;
+}
+
 export interface StyleHtmlProps {
   content?: string;
 }
@@ -11,6 +15,7 @@ export interface StyleHtmlProps {
 export interface basicProps {
   key?: string | number | boolean;
   title?: string;
+  shortDescription?: string;
   description?: string;
   date?: string;
 }
