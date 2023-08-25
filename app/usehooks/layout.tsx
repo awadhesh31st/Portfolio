@@ -10,7 +10,7 @@ const LayoutUseHooks: React.FC<ReactJSXProps> = ({ children }) => {
     <>
       <Header />
       <PageContainer>
-        <div className="flex flex-col items-center justify-center gap-7">
+        <div className="flex flex-col items-center justify-center px-5 gap-7">
           <Image
             src={useHook}
             alt="check-all"
