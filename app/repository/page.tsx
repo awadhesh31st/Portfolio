@@ -16,7 +16,7 @@ const GitRepositoryPage = async () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-8 text-center w-50">
+      <div className="flex flex-col items-center justify-center gap-8 px-5 text-center w-50">
         <h1 className="text-6xl text-center duration-1000 drop-shadow-purple hover:drop-shadow-carrot font-extraBold sm:text-7xl whitespace-wrap sm:whitespace-nowrap">
           {title}
         </h1>
@@ -24,8 +24,8 @@ const GitRepositoryPage = async () => {
           {description}
         </h2>
       </div>
-      <div className="w-full h-px bg-grayLight bg-opacity-20" />
-      <div className="grid grid-cols-1 gap-5 mx-auto lg:mx-0 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="w-full h-px px-5 bg-grayLight bg-opacity-20" />
+      <div className="grid grid-cols-1 gap-5 px-5 mx-auto lg:mx-0 sm:grid-cols-2 lg:grid-cols-3">
         {data?.map((cardData: GitRepoProps, key: number) => {
           return <GitHubRepo {...cardData} key={key} />;
         })}
