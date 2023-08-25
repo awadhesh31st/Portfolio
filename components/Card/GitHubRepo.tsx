@@ -20,7 +20,7 @@ const GitHubRepo: React.FC<GitRepoProps> = ({
 }) => {
   const regex = /-/gi;
   return (
-    <CardLayout key={id}>
+    <CardLayout key={id} className={'hover:drop-shadow-yellow'}>
       <article className="p-4 md:p-8">
         <div className="flex items-center justify-between gap-2">
           <span className="text-xs duration-1000 font-extraLight text-grayDark group-hover:text-pink">
