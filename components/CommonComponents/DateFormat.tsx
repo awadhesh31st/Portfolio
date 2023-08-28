@@ -1,7 +1,7 @@
 import React from 'react';
-import { basicProps } from '../../types/common';
+import { BasicProps } from '../../types/common';
 
-const DateFormat: React.FC<basicProps> = ({ date = '' }) => {
+const DateFormat: React.FC<BasicProps> = ({ date = '' }) => {
   return date ? (
     <time dateTime={new Date(date).toISOString()}>
       {Intl.DateTimeFormat(undefined, {

@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import Header from '@components/Header';
@@ -10,11 +12,11 @@ const LayoutUseHooks: React.FC<ReactJSXProps> = ({ children }) => {
     <>
       <Header />
       <PageContainer>
-        <div className="flex flex-col items-center justify-center px-5 gap-7">
+        <div className="flex flex-col items-center justify-center px-5 gap-7 mb-15">
           <Image
             src={useHook}
             alt="check-all"
-            className="h-auto w-52 sm:w-80 hover:drop-shadow-pink"
+            className="h-auto w-52 sm:w-80"
           />
           <p className="w-full p-6 text-center rounded-lg sm:w-2/3 bg-darkGrey">
             Custom hooks are a fundamental concept in React, a popular
@@ -23,7 +25,7 @@ const LayoutUseHooks: React.FC<ReactJSXProps> = ({ children }) => {
             making your code more modular and easier to maintain.
           </p>
         </div>
-        {children}
+        <div className="">{children}</div>
       </PageContainer>
     </>
   );
