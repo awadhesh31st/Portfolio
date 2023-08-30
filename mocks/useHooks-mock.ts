@@ -49,6 +49,7 @@ export const UseHooksMock: BasicProps[] = [
       
       export default App;
       `,
+    uri: 'useDebounce',
   },
   {
     title: 'useThrottle',
@@ -56,5 +57,6 @@ export const UseHooksMock: BasicProps[] = [
       'useThrottle is a technique that limits the rate at which a function ...',
     description:
       'Throttling, as I mentioned in the previous response, is a technique that limits the rate at which a function is executed. It ensures that the function is executed at most once within a specified time interval.',
+    uri: 'useThrottle',
   },
 ];
