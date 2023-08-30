@@ -6,6 +6,11 @@ export interface ReactJSXProps {
 
 export interface JsxWithClass extends ReactJSXProps {
   className?: string;
+  url?: string;
+}
+
+export interface KeyValue {
+  [key: string]: string;
 }
 
 export interface StyleHtmlProps {
@@ -19,6 +24,7 @@ export interface BasicProps {
   description?: string;
   date?: string;
   code?: string;
+  uri?: string;
 }
 
 export interface basicInputProps extends BasicProps {
@@ -48,4 +54,17 @@ export interface LayoutProps extends BasicProps {
 export interface ModalProps extends ReactJSXProps {
   isOpen?: boolean;
   onClose?: () => void;
+}
+
+export interface BlogProps {
+  [key: string]: BlogDetailProps;
+}
+
+export interface BlogDetailProps {
+  hookTitle?: string;
+  hookDescription?: string;
+  descriptionTitle?: string;
+  description?: string;
+  returnTitle?: string;
+  returnDescription?: string;
 }
