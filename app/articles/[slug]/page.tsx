@@ -8,7 +8,7 @@ import { BlogMock } from '../../../mocks/blog-mock';
 import { CodeSnippet } from '../../../mocks/code-snippet-mock';
 import { BlogDetailProps } from '../../../types/common';
 
-const HooksInfo = () => {
+const ArticleDetail = () => {
   const params = useParams();
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [content, setContent] = useState<BlogDetailProps>({});
@@ -81,4 +81,4 @@ const HooksInfo = () => {
   );
 };
 
-export default HooksInfo;
+export default ArticleDetail;

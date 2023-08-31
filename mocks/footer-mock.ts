@@ -7,7 +7,7 @@ export const FooterMock: FooterProps = {
   },
   moreMenu: {
     title: 'More',
-    navItem: ['useHooks'],
+    navItem: ['Articles'],
   },
   form: {
     title: 'Connect with me',
