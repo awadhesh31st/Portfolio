@@ -1,9 +1,9 @@
 import React from 'react';
 import LinkCardLayout from '@components/Card/LinkCardLayout';
-import { UseHooksMock } from '@mocks/useHooks-mock';
+import { ArticlesMock } from '@mocks/articles-mock';
 
-const UseHooksComponent = () => {
-  const data = UseHooksMock || [];
+const ArticleComponent = () => {
+  const data = ArticlesMock || [];
 
   return (
     <>
@@ -31,4 +31,4 @@ const UseHooksComponent = () => {
   );
 };
 
-export default UseHooksComponent;
+export default ArticleComponent;
