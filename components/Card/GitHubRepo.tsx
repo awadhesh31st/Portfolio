@@ -26,7 +26,13 @@ const GitHubRepo: React.FC<GitRepoProps> = ({
           <span className="text-xs duration-1000 font-extraLight text-grayDark group-hover:text-pink">
             <DateFormat date={created_at} />
           </span>
+          <div className="flex space-x-2">
+            <div className="w-3 h-3 rounded-full bg-red"></div>
+            <div className="w-3 h-3 rounded-full bg-yellow"></div>
+            <div className="w-3 h-3 rounded-full bg-green"></div>
+          </div>
         </div>
+
         <h2 className="flex items-center gap-4 mt-4 text-2xl capitalize duration-1000 font-semiBold lg:text-3xl text-biege group-hover:text-yellow">
           <FaFolder />
           <span>{(name || '').replaceAll(regex, ' ')}</span>

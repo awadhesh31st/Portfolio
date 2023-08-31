@@ -19,4 +19,20 @@ export const BlogMock: BlogProps = {
     returnDescription:
       'The hook returns the throttled function that you can use in your component.',
   },
+  reduce: {
+    hookTitle: 'reduce()',
+    hookDescription: `Crafting a JavaScript Reduce Polyfill: Simplifying Array Manipulation`,
+    descriptionTitle: 'Description',
+    description: `The reduce() method in JavaScript is a powerful tool for performing iterative operations on arrays, allowing you to condense an array of values into a single output. While it's a standard feature of modern JavaScript, it's essential to understand how it works under the hood. In this article, we'll delve into the mechanics of the reduce() function and create a polyfill from scratch to gain a deeper appreciation of its functionality. By building our own polyfill, we'll not only enhance our understanding of the language but also learn how to address compatibility issues in older browsers.`,
+    returnTitle: 'Return Value',
+    returnDescription: `The reduce() function returns a single value that accumulates the results of the callback function's operations on each element of the array`,
+  },
+  map: {
+    hookTitle: 'map()',
+    hookDescription: `Unveiling the Magic of JavaScript Map Polyfill: Transforming Arrays Like a Pro`,
+    descriptionTitle: 'Description',
+    description: `n the realm of JavaScript, the map() method stands as a formidable tool for transforming arrays with grace and efficiency. Although a staple of modern programming, comprehending its inner mechanics fuels a deeper appreciation for its capabilities. This article dives into the enchanting world of the map() function, constructing a polyfill from scratch. By constructing our polyfill, we journey through the heart of array manipulation and cultivate a knack for circumventing compatibility snags in older browsers.`,
+    returnTitle: 'Return Value',
+    returnDescription: `The map() function returns a new array containing the results of applying a given callback function to each element of the original array.`,
+  },
 };
