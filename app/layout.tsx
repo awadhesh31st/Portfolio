@@ -1,5 +1,6 @@
 import '@/styles/globals.css';
 import Head from 'next/head';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'Home | Awadhesh',
@@ -16,7 +17,10 @@ export default function RootLayout({
       <Head>
         <link rel="shortcut icon" href="../public/favicon.ico" />
       </Head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
