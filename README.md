@@ -8,7 +8,7 @@ I am a frontend developer passionate about building dynamic and engaging web app
 
 ### Page Performance
 
-<img width="664" alt="Screenshot 2025-03-14 at 2 54 07 PM" src="https://github.com/user-attachments/assets/54a62bab-60cb-4474-ae0b-7d481421d432" />
+<img width="662" alt="Screenshot 2025-03-14 at 2 53 57 PM" src="https://github.com/user-attachments/assets/206e9590-cdc9-40d2-8ec4-5c03b6985824" />
 <img width="662" alt="Screenshot 2025-03-14 at 2 53 57 PM" src="https://github.com/user-attachments/assets/dabacc3a-9fe1-4b11-a5cb-6687f5652113" />
 
 ## Teaching & Courses
