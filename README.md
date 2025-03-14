@@ -1,18 +1,31 @@
-# Welcome to my Git README page
+# Welcome to My GitHub README
 
-I am a frontend developer with a passion for creating dynamic and engaging web applications. My primary focus is on using modern technologies and frameworks to build intuitive user interfaces that enhance the user experience.
+## About Me
 
-<img width="1710" alt="image" src="https://user-images.githubusercontent.com/121618523/236869928-0f638ca7-9ccd-4e08-8425-b38414827c9b.png">
+I am a frontend developer passionate about building dynamic and engaging web applications. My expertise lies in leveraging modern technologies and frameworks to craft intuitive user interfaces that enhance the overall user experience.
 
-In addition to my development work, I have also created several courses on popular frontend technologies, including React, Next.js and web development. These courses are designed to help developers of all levels improve their skills and stay up-to-date with the latest trends in the industry.
+![Project Screenshot](https://user-images.githubusercontent.com/121618523/236869928-0f638ca7-9ccd-4e08-8425-b38414827c9b.png)
 
-If you are interested in learning more about my work or connecting with me, please feel free to check out my Github repository or reach out to me directly. I am always happy to collaborate with other developers and share my knowledge and expertise.
+### Page Performance
 
-Thank you for visiting my page and I look forward to connecting with you soon!
+<img width="664" alt="Screenshot 2025-03-14 at 2 54 07 PM" src="https://github.com/user-attachments/assets/54a62bab-60cb-4474-ae0b-7d481421d432" />
+<img width="662" alt="Screenshot 2025-03-14 at 2 53 57 PM" src="https://github.com/user-attachments/assets/dabacc3a-9fe1-4b11-a5cb-6687f5652113" />
+
+## Teaching & Courses
+
+In addition to development, I have created several courses covering popular frontend technologies, including React, Next.js, and web development. These courses aim to help developers of all levels refine their skills and stay updated with the latest industry trends.
+
+## Connect With Me
+
+If you're interested in learning more about my work, exploring my GitHub repositories, or collaborating, feel free to reach out. I'm always open to connecting with fellow developers and sharing knowledge.
+
+Thank you for visiting my page! I look forward to connecting with you.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+To start the development server, use one of the following commands:
 
 ```bash
 npm run dev
@@ -20,8 +33,3 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the files.
